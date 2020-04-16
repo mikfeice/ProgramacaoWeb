@@ -27,7 +27,14 @@
             vm.produto = {};
         };
         
-        vm.deletarItem = function(){
+        vm.deletarItem = function(index){
+            vm.produtos.splice(index, 1);
+            alert('Produto deletado com sucesso!');
+
+        };
+
+        vm.alterarItem = function(){
+            
 
         };
     }

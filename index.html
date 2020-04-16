@@ -39,10 +39,10 @@
                     <td>{{item.nome}}</td>
                     <td>{{item.preco}}</td>
                     <td>
-                        <button ng-click="vm.deletarItem()">Deletar</button>
+                        <button type="submit" ng-click="vm.deletarItem($index)" >Deletar</button>
                     </td>
                     <td>
-                        <button>Alterar</button>
+                        <button type="submit" ng-click="vm.alterarItem()">Alterar</button>
                     </td>
                 </tr>
             </tbody>
